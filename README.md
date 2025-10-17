@@ -8,6 +8,9 @@
 
 > **AI-powered Kubernetes resource optimization tool that analyzes pod metrics and provides intelligent recommendations using GPT-4/Claude for cost reduction and performance improvement.**
 
+![Kubernetes AI Copilot Dashboard](img/Kubernetes%20AI%20Copilot.jpeg)
+*Interactive dashboard showing cluster metrics, AI recommendations, and resource optimization insights*
+
 ## ✨ Features
 
 - 📊 **Real-time Cluster Monitoring** - Mock data simulation with realistic metrics
@@ -56,6 +59,20 @@ Run the demo script to see all features without API keys:
 ```bash
 python3 demo.py
 ```
+
+## 📸 Screenshots
+
+### Dashboard Overview
+![Dashboard Overview](img/Kubernetes%20AI%20Copilot%20·%202.20pm%20·%2010-17.jpeg)
+*Main dashboard showing cluster overview, efficiency metrics, and optimization opportunities*
+
+### Recommendations Analysis
+![Recommendations Analysis](img/Kubernetes%20AI%20Copilot%20·%202.20pm%20·%2010-17%20(1).jpeg)
+*Detailed recommendations table with severity indicators and potential savings*
+
+### Interactive Visualizations
+![Interactive Visualizations](img/Kubernetes%20AI%20Copilot%20·%202.21pm%20·%2010-17.jpeg)
+*Resource utilization heatmap and trend analysis charts*
 
 ## Configuration
 
