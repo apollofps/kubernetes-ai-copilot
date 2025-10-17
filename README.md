@@ -29,9 +29,18 @@
 
 ### Installation
 
+#### Option 1: Quick Start (Recommended)
+```bash
+git clone https://github.com/apollofps/kubernetes-ai-copilot.git
+cd kubernetes-ai-copilot
+chmod +x quick_start.sh
+./quick_start.sh
+```
+
+#### Option 2: Manual Installation
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/kubernetes-ai-copilot.git
+   git clone https://github.com/apollofps/kubernetes-ai-copilot.git
    cd kubernetes-ai-copilot
    ```
 
