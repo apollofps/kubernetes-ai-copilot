@@ -1,0 +1,56 @@
+namespaces:
+  - name: "production"
+    workload_type: "microservices"
+    pod_count: 15
+    issues:
+      - "over-provisioned"
+      - "high-restarts"
+    
+  - name: "staging"
+    workload_type: "mixed"
+    pod_count: 12
+    issues:
+      - "under-provisioned"
+      - "memory-pressure"
+    
+  - name: "monitoring"
+    workload_type: "observability"
+    pod_count: 8
+    issues:
+      - "resource-waste"
+    
+  - name: "batch-jobs"
+    workload_type: "batch"
+    pod_count: 6
+    issues:
+      - "oom-killed"
+      - "cpu-bottleneck"
+
+workload_types:
+  microservices:
+    cpu_request_range: [100, 500]  # millicores
+    memory_request_range: [256, 1024]  # MB
+    cpu_limit_multiplier: [1.5, 3.0]
+    memory_limit_multiplier: [1.2, 2.0]
+    restart_threshold: 3
+    
+  mixed:
+    cpu_request_range: [200, 800]
+    memory_request_range: [512, 2048]
+    cpu_limit_multiplier: [1.2, 2.5]
+    memory_limit_multiplier: [1.1, 1.8]
+    restart_threshold: 5
+    
+  observability:
+    cpu_request_range: [50, 300]
+    memory_request_range: [128, 512]
+    cpu_limit_multiplier: [2.0, 4.0]
+    memory_limit_multiplier: [1.5, 3.0]
+    restart_threshold: 2
+    
+  batch:
+    cpu_request_range: [500, 2000]
+    memory_request_range: [1024, 4096]
+    cpu_limit_multiplier: [1.0, 1.5]
+    memory_limit_multiplier: [1.0, 1.3]
+    restart_threshold: 1
